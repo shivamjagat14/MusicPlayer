@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <div class="cantainar">
+        <div class="music_box">
+            <nav class="navbar">
+                <div id="back">
+                    <i class='bx bx-x'></i>
+                </div>
+                <div id="manu">
+                    <i class='bx bxs-playlist' ></i>
+                </div>
+            </nav>
+            <div id="songimg_box">
+                <img src="song_img/songimg1.jpg"  id="songimg">
+            </div>
+            <div id="title" > 
+                <h1 id="stitle">One love</h1>
+            </div>
+            <audio loop   src="file/onelove.mp3" id="song" >
+            </audio>
+            <div class="progress_bar">
+            <input type="range" id="progress" sandbox>
+            </div>
+            <div class="duration">
+                <p id="music_duration">00:00</p>
+                <p id="music_time">00:00</p>
+            </div>
+            <div class="controls">
+                <i class='bx bx-skip-previous' id="previousbtn" ></i>
+                <i class='bx bx-play' id="playpause" onclick="playpausebtn()"></i>
+                <i class='bx bx-skip-next' id="forwardbtn"></i>
+            </div>
+        </div>
+        <div id="manubar">
+            <div id="music_list">
+            </div> 
+        </div>
+        </div>
+    </div>
+  </body>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</html>
