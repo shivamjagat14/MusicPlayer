@@ -233,7 +233,7 @@ body{
 @media (320px<= width<=426px){
     .music_box{
         width: 90%;
-        height: 75%;
+        height: 60%;
         position: absolute;
     }
     #songimg{
